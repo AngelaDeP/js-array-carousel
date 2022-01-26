@@ -67,5 +67,5 @@ let currentSlide = 0;
 let itemImages = document.getElementsByClassName('item');
 itemImages[currentSlide].classList.add('active');
 
-let borderImages = document.getElementsByClassName('img-item');
-borderImages[currentSlide].classList.add('border');
+/*let borderImages = document.getElementsByClassName('img-item');
+borderImages[currentSlide].classList.add('border');*/
