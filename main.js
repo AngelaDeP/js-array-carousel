@@ -28,6 +28,8 @@ let mergedArray = [...items, ...title, ...text];
 
 let slides ='';
 
+
+
 for (let i = 0; i < mergedArray.length; i++) {
 
     slides +=   `<div class="item">
@@ -37,10 +39,26 @@ for (let i = 0; i < mergedArray.length; i++) {
                         <p>${text[i]}</p>
                     </div>
                 </div>`;
+
+}
+
+let miniatures ='';
+
+for (let i = 0; i < items.length; i++) {
+
+    miniatures += `<div class="img-item flex">
+                        <div class="overlay"></div>
+
+                        <img src="${items[i]}">
+                    </div>`;
+
 }
 
 let carouselContainer = document.querySelector('.left-part');
 carouselContainer.innerHTML = slides;
+
+let miniaturesContainer = document.querySelector('.right-part');
+miniaturesContainer.innerHTML = miniatures;
 
 
 // Regole aggiunta classe
@@ -48,3 +66,6 @@ let currentSlide = 0;
 
 let itemImages = document.getElementsByClassName('item');
 itemImages[currentSlide].classList.add('active');
+
+let borderImages = document.getElementsByClassName('img-item');
+borderImages[currentSlide].classList.add('border');

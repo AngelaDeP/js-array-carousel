@@ -119,3 +119,8 @@ body {
 .item.active {
     display: block;
 }
+
+.img-item.border {
+    border: 1px solid #fff;
+}
+
