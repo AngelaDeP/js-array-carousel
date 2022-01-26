@@ -58,7 +58,7 @@ let carouselContainer = document.querySelector('.left-part');
 carouselContainer.innerHTML = slides;
 
 let miniaturesContainer = document.querySelector('.right-part');
-miniaturesContainer.innerHTML = miniatures;
+miniaturesContainer.innerHTML += miniatures;
 
 
 // Regole aggiunta classe

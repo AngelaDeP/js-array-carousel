@@ -90,7 +90,7 @@ body {
 
 /*Sezione frecce*/
 
-.arrow-container .arrow-up {
+.right-part .arrow-up {
     position: absolute;
     background-color: rgb(221, 221, 221);
     border-radius: 50%;
@@ -99,11 +99,12 @@ body {
     text-align: center;
     line-height: 20px;
     top: 2%;
-    right: 6%;
+    left: 50%;
     transform: translateX(-50%);
+    z-index: 1;
 }
 
-.arrow-container .arrow-down {
+.right-part .arrow-down {
     position: absolute;
     background-color: rgb(221, 221, 221);
     border-radius: 50%;
@@ -112,8 +113,9 @@ body {
     text-align: center;
     line-height: 20px;
     bottom: 2%;
-    right: 6%;
+    left: 50%;
     transform: translateX(-50%);
+    z-index: 1;
 }
 
 /*Regole classe active*/
