@@ -1,0 +1,121 @@
+/*Regole generali*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(214, 203, 188);
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+/*Regole generali carousel*/
+
+.carousel {
+    position: absolute;
+    width: 50%;
+    height: 35vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Regole interno carousel*/
+
+/*Sezione parte sinistra*/
+
+.left-part {
+    width: 85%;
+    height: 35vh;
+}
+
+.item {
+    height: 35vh;
+    display: none;
+    position: relative;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Sezione testo*/
+
+.text-img {
+    color: #fff;
+    position: absolute;
+    text-align: end;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+}
+
+/*Sezione parte destra*/
+
+.right-part {
+    width: 15%;
+    flex-direction: column;
+    position: relative;
+}
+
+.right-part img {
+    height: calc(35vh / 5);
+    width: 100%;
+}
+
+.right-part .img-item {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(35vh / 5);
+    background-color: rgba(0,0,0,0.5);
+}
+
+.right-part .arrow-up {
+    position: absolute;
+    background-color: rgb(221, 221, 221);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.right-part .arrow-down {
+    position: absolute;
+    background-color: rgb(221, 221, 221);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*Regole classe active*/
+
+.item.active {
+    display: block;
+}
